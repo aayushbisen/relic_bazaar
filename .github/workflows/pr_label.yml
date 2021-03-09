@@ -1,6 +1,6 @@
 name: Labeling new pull request with GSSOC21
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - master
     types:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   add-label:
-    name: Add Label
+    name: Add GSSOC21 Label
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
